@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinh nhật vui vẻ!</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffd0e7, #fff); /* Màu nền gradient */
+            color: #333;
+            margin: 0;
+        }
+
+        .birthday-card {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 182, 193, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            transition: box-shadow 0.3s ease-in-out; /* Hiệu ứng transition */
+        }
+
+        .birthday-card:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Hiệu ứng hover shadow */
+        }
+
+        h1 {
+            color: #e44d26;
+            font-size: 28px; /* Kích thước chữ tăng lên */
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Góc bo tròn tăng lên */
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out; /* Hiệu ứng transition */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Hiệu ứng hover scale */
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            animation: floatHeart 2s infinite;
+        }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translate(-50%, 0);
+            }
+            50% {
+                transform: translate(-50%, -20px);
+            }
+            100% {
+                transform: translate(-50%, 0);
+            }
+        }
+
+        /* Hiển thị thông điệp sinh nhật */
+        .message {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #e44d26; /* Màu đỏ */
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-card">
+        <h1>Em yêu của anh, sinh nhật vui vẻ nhé! 💕</h1>
+        <p>Tủi mới gòi, anh mong em có nhiều sức khỏe, xinh đẹp để có thể chăm sóc được "con báo" này nha 😂</p>
+        <img src="C:\Users\nguye\Desktop\sinh nhật người yêu\IMG_20231230_214210_563.jpg" alt="Hình ảnh sinh nhật">
+        <div class="heart">❤️</div>
+    </div>
+</body>
+</html>
